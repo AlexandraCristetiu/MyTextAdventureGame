@@ -4,6 +4,7 @@ title __SAMPLE's Class Diagram__\n
 
   package sample {
     class Controller {
+        + initialize()
     }
   }
   
