@@ -8,8 +8,8 @@ public class Artifact {
     protected int id_new;
 
     public Artifact(){
-        id_new = id;
-        id++;
+        id_new = Artifact.id;
+        Artifact.id++;
     }
 
     public int getId() {
