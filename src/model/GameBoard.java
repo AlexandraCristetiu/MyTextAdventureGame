@@ -25,4 +25,28 @@ public class GameBoard {
         connectedGameBoards = new HashMap<>();
         uniqueId = lastId ++;
     }
+
+    public void addConnectedBoard(GameBoard gameBoardForest, int i, int i1) {
+
+    }
+
+    public boolean placeOnBoard(Object obj, int horizontal, int vertical) {
+        return false;
+    }
+
+    public Object removeFromBoard(int horizontal, int vertical) {
+        return null;
+    }
+
+    public int artifactVerticalPosition(Artifact artifact) {
+        return 0;
+    }
+
+    public int artifactHorizontalPosition(Artifact artifact) {
+        return 0;
+    }
+
+    public int getUniqueId() {
+        return 0;
+    }
 }
