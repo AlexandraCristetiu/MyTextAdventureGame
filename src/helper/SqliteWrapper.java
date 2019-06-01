@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class SqliteWrapper {
+public abstract class SqliteWrapper {
     private Connection connect() {
         // connect to the database
 
@@ -33,11 +33,17 @@ public class SqliteWrapper {
         }
     }
 
+    public abstract void createTable() ;
+
     public void insert() {
 
     }
 
     public void createAllTables() {
 
+    }
+
+    public Object getAllSizes() {
+        return null;
     }
 }

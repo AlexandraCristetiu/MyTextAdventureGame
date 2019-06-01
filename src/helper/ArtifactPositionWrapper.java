@@ -6,6 +6,8 @@ import model.GameBoard;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 public class ArtifactPositionWrapper {
     public void createTable() {
@@ -38,6 +40,10 @@ createArtifactPosition();
     }
 
     private Connection connect() {
+        return null;
+    }
+
+    public Map<Integer, List<Integer>> getAllArtifactsPositions() {
         return null;
     }
 }

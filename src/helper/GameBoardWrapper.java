@@ -2,7 +2,7 @@ package helper;
 
 public class GameBoardWrapper {
     public void createTable() {
-createTableGameBoards();
+        createTableGameBoards();
     }
 
     private void createTableGameBoards() {

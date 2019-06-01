@@ -12,23 +12,18 @@ public class Artifact {
         id++;
     }
 
+    public int getId() {
+        return id_new;
+    }
+
     public String getName() {
         return this.getClass().getSimpleName();
     }
 
-    public Artifact(int id, String name){
-        id_new = id;
-        id++;
-
-        //this.id = id ;
-
-    }
-    @Override
+ @Override
     public String toString() {
         return super.toString();
     }
 
-    public int getId() {
-        return 0;
-    }
+
 }

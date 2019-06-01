@@ -1,4 +1,11 @@
 package model;
 
-public class Key {
+public class Key extends Artifact implements ColectibleItem {
+
+    public Key() {
+    }
+
+    public Key(int id) {
+        super();
+    }
 }

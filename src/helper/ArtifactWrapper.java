@@ -1,5 +1,9 @@
 package helper;
 
+import model.Artifact;
+
+import java.util.List;
+
 public class ArtifactWrapper {
     public void createTable() {
     createTablePlayers();
@@ -7,5 +11,9 @@ public class ArtifactWrapper {
 
     private void createTablePlayers() {
 
+    }
+
+    public List<Artifact> getAllArtifacts() {
+        return null;
     }
 }
