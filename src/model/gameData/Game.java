@@ -1,4 +1,8 @@
-package model;
+package model.gameData;
+
+import helper.ConnectedGameBoardWrapper;
+import helper.GameBoardWrapper;
+import model.Player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +14,10 @@ public class Game {
 
     public Game() {
         gameBoards = new ArrayList<>();
-        ArrayList<Object> board_size = new ArrayList<>();
+
+        GameBoardWrapper gameBoardWrapper = new GameBoardWrapper();
+
+        ConnectedGameBoardWrapper connectedGameBoardWrapper = new ConnectedGameBoardWrapper();
 
         GameBoard gameBoardForest = new GameBoard("forest", 10);
 
@@ -29,25 +36,25 @@ public class Game {
                 nr = random.nextInt(10) + 1;
             }
 
-            double i = Math.random() * 10 - 5;
+
 
         } else if (board_size.contains("Medium")) {
             Random random = new Random();
             int nr = random.nextInt(20) + 1;
-            while (nr < 20 || nr > 10) {
+            while (nr < 20 && nr > 10) {
                 nr = random.nextInt(20) + 1;
             }
 
-            double i = Math.random() * 20 - 10;
+
         } else {
             board_size.contains("Large");
             Random random = new Random();
             int nr = random.nextInt(30) + 1;
-            while (nr < 30 || nr > 20) {
+            while (nr < 30 && nr > 20) {
                 nr = random.nextInt(30) + 1;
             }
 
-            double i = Math.random() * 30 - 10;
+
         }
 
         //endregion
@@ -73,11 +80,14 @@ public class Game {
         return gameBoards;
     }
 
-    public boolean movePlayer(Player player, int horizontal, int vertical,int gameBoardId ) {
+    public boolean movePlayer(Player player, int horizontal, int vertical, int gameBoardId ) {
         return true;
     }
 
     public void setCurrentBoardIndex(Object currentGameBoard) {
 
+    }
+
+    public void movePlayer(Player player, int horizontal, int i) {
     }
 }

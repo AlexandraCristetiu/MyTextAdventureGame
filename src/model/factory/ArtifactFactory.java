@@ -9,13 +9,14 @@ public class ArtifactFactory {
             artifact = new Key();
         } else if (className.equals(Door.class.getSimpleName())) {
             artifact = new Door(null);
-        } else {
-            className.equals(Rock.class.getSimpleName());
+        } else if(
+            className.equals(Rock.class.getSimpleName()));
             {
                 artifact = new Rock(1);
             }
-        }
         return artifact;
+        }
+
     }
 
-}
+

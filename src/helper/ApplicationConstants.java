@@ -4,6 +4,7 @@ public class ApplicationConstants {
 
     //region database
     public static final String APP_FOLDER_DATA_PATH = "C:\\Users\\Public\\Documents\\txtadvGame";
+    public static final String BTN_MAP_EDITOR = "Map Editor";
 
     private static final String PATH_SEPARATOR = "\\";
 
@@ -59,6 +60,11 @@ public class ApplicationConstants {
     public static final String TABLE_PLAYER_HORIZONTAL = "horizontal";
     public static final String TABLE_PLAYER_VERTICAL = "vertical";
     public static final String TABLE_PLAYERS_NAME_COLUMN = "players";
+    public static String TABLE_RELATED_BOARDS = "related_boards";
+    public static String TABLE_RELATED_BOARDS_ID = "id";
+    public static String TABLE_RELATED_BOARDS_MAP = "connected_with";
+    public static String TABLE_RELATED_HORIZONTAL_CONNECTION = "horizontal_connection";
+    public static String TABLE_RELATED_VERTICAL_CONNECTION = "vertical_connection";
 
     // endregion
 

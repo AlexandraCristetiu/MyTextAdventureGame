@@ -1,7 +1,7 @@
 package helper;
 
 import model.Artifact;
-import model.GameBoard;
+import model.gameData.GameBoard;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

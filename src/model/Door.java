@@ -11,4 +11,8 @@ public Door(Key doorKey){
         super();
         this.doorKey = doorKey;
     }
+    // matches key with door
+    public boolean matchKey(Key key){
+    return key.equals(this.doorKey);
+    }
 }

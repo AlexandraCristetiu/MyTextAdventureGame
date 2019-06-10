@@ -23,7 +23,7 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="800.0">
                            <children>
-                              <Button fx:id="btnOpenMapEditor" layoutX="111.0" layoutY="142.0" mnemonicParsing="false" text="Edit existing map">
+                              <Button fx:id="btnOpenMapEditor" layoutX="111.0" layoutY="142.0" mnemonicParsing="false" onAction="#doOpenExistingMaps" text="Edit existing map">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -51,7 +51,7 @@
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <ComboBox fx:id="cmbboxMapSizeMapGenerator" layoutX="282.0" layoutY="119.0" onAction="#initialize" onMouseClicked="#initialize" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbboxMapSizeMapGenerator" layoutX="282.0" layoutY="119.0" onAction="#initializeMap" onMouseClicked="#initializeMap" prefWidth="150.0" />
                               <Label fx:id="lblInsertMapNameMapGenerator" layoutX="12.0" layoutY="87.0" prefHeight="17.0" prefWidth="124.0" text="Insert Map Name">
                                  <font>
                                     <Font size="13.0" />

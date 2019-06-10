@@ -30,6 +30,7 @@ public class Player implements ILocalizable {
 
     public Player(String name, int ID) {
         this.name = name;
+        artifacts = new ArrayList<>();
     }
 
     public String getName() {
